@@ -1,0 +1,14 @@
+
+input,textarea , button {
+    margin-block:5px ;
+ 
+}
+label{
+    color: #fff;
+}
+
+textarea{
+    resize: none;
+    height: 90px;
+}
+  

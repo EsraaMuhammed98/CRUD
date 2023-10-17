@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+ </head>
+ <body>
+  <main class="w-50 mx-auto   ">
+ <section class="bg-info p-5 text-white">
+  <form>
+  <label for="prdName">product Name</label>
+  <input type="text" class="form-control" name="product-name" id="prdName">
+
+  <label for="prdPrice">product Price</label>
+  <input type="text"class="form-control" name="product-price" id="prdPrice">
+
+  <label for="prdCat">product Category</label>
+  <input type="text" class="form-control" name="product-cat" id="prdCat">
+
+  <label for="prdDesc">product Description</label>
+  <textarea type="text" class="form-control" name="product-desc" id="prdDesc"></textarea>
+
+  <button class="btn btn-success w-100" id="addBtn" onclick="addProduct()">Add Product</button>
+  <button class="btn btn-warning w-100 d-none" id="updateBtn"  onclick="updateProduct()">update Product</button>
+  </form>
+ </section>
+
+
+ <section class="mt-5">
+  <input type="search" oninput="searchProduct()" id="search" class="form-control w-50 mx-auto">
+  <div class="table-responsive">
+    <table class="table ">
+      <thead>
+        <tr>
+          <th scope="col">product Name</th>
+          <th scope="col">product Price</th>
+          <th scope="col">product Category</th>
+          <th scope="col">product Description</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableData">
+      
+      </tbody>
+    </table>
+  </div>
+  
+ </section>
+
+</main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+ </body>
+ </html>
